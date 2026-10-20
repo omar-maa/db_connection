@@ -2,7 +2,6 @@
 // ========================================
 // KONFIGURASI KONEKSI MARIADB / MYSQL
 // ========================================
-// hapus tanda komentarnya jika konfigurasi database ingin dilakukan secara manual menggunakan text editor.
 // $db_host = "localhost";
 // $db_user = "root";
 // $db_pass = "";
