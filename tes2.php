@@ -4,8 +4,8 @@
 // ========================================
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = "";
-$db_name = "nama_database";
+// $db_pass = "";
+// $db_name = "nama_database";
 
 
 // Status koneksi
