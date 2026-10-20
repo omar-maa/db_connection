@@ -1,8 +1,8 @@
 <?php
-// hapus tanda comment jika ingin melakukan pengaturan database secara manual.
+$pass = "PASSWORD_ROOT_DATABASE_ANDA";
 $host = "localhost";
 $user = "root";
-// $pass = "PASSWORD_ROOT_DATABASE_ANDA";
+
 
 // Membuat koneksi ke database
 $conn = new mysqli($host, $user, $pass);
