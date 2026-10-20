@@ -1,0 +1,12 @@
+#!/bin/bash
+sudo dnf update -y
+sudo dnf install -y httpd git mariadb105-server php php-mysqli php-mysqlnd
+sudo systemctl enable --now mariadb
+sudo systemctl enable --now httpd
+sudo systemctl restart httpd
+sudo mariadb -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'pwokebaru';"
+mariadb -u root -p"pwokebaru" -e "CREATE DATABASE IF NOT EXISTS omar;"
+sudo git clone https://github.com/omar-maa/db_connection /var/www/html
+sudo sed -i '5i\$pass = "pwokebaru";' /var/www/html/tes.php
+sudo sed -i '9i\$db_pass = "pwokebaru";' /var/www/html/tes2.php
+sudo sed -i '10i\$db_name = "omar";' /var/www/html/tes2.php
