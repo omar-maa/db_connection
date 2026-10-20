@@ -1,7 +1,7 @@
 <?php
 // hapus tanda comment jika ingin melakukan pengaturan database secara manual.
-// $host = "localhost";
-// $user = "root";
+$host = "localhost";
+$user = "root";
 // $pass = "PASSWORD_ROOT_DATABASE_ANDA";
 
 // Membuat koneksi ke database
